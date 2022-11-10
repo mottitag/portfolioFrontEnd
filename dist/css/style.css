@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background: lightblue;
+}
+
+.bg {
+    text-align: center;
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.home {
+    background-image: url("../assets/img/img_banner.jpg");
+}
