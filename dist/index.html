@@ -27,11 +27,15 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <!-- se agrega el atributo flex para cambiar la barra de navegacion a vertical -->
     <div class="container flex-lg-column">
+      <a href="#" id="btn-edit-foto" class="btn btn-brand d-none d-lg-block" data-aos="fade-up">
+        <i class="las la-pen"></i>
+      </a>
       <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
         <!-- se agrega d-lg-non para esconder el nombre en dispositios largos y d-block para que se muestre en dispositivos pequenos-->
         <span class="h3 fw-bold d-block d-lg-none">Gabriel Motta</span>
-        <img src="./assets/img/Img_Mottita.jpeg" class="d-none d-lg-block rounded-circle" alt="">
+        <img src="./assets/img/Img_Mottita.jpeg" id="foto-perfil" class="d-none d-lg-block rounded-circle" alt="">
       </a>
+      <input type="file" id="input-foto-perfil" class="d-none">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -263,18 +267,45 @@
     <!-- //SERVICIOS -->
 
     <!-- HABILIDADES -->
-    <section id="habilidades" class="full-heigth px-lg-5">
+    <section id="skills" class="full-heigth px-lg-5">
       <div class="container">
         <div class="row pb-4">
-          <div class="col-md-4">
 
-          </div>
           <div class="col-md-4">
-            
+            <div class="outer">
+              <div class="inner">
+                <div id="skill_html">
+                </div>
+              </div>
+            </div>
           </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+
           <div class="col-md-4">
-            
+            <div class="outer">
+              <div class="inner">
+                <div id="skill_css"></div>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-4">
+            <div class="outer">
+              <div class="inner">
+                <div id="skill_JS"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
